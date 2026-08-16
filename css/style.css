@@ -364,9 +364,8 @@ footer {
 }
 
 #about .about-image img {
-  border-right: 6px solid #202020;
-  border-radius: 5px;
-  padding-right: 12px;
+  border-radius: 8px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -449,6 +448,56 @@ footer {
   color: #333;
   font-family: 'Playfair Display', sans-serif;
   padding-bottom: 10px;
+}
+
+#contact .contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 20px;
+}
+
+#contact .contact-info-item {
+  background: #f7f7f7;
+  border-radius: 8px;
+  padding: 32px 24px;
+  flex: 1 1 220px;
+  max-width: 260px;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+
+#contact .contact-info-item:hover {
+  background: #000;
+  transform: translateY(-5px);
+  box-shadow: 0px 16px 22px 0px rgba(90, 91, 95, 0.3);
+}
+
+#contact .contact-info-item:hover h4,
+#contact .contact-info-item:hover span,
+#contact .contact-info-item:hover .fa {
+  color: #fff;
+}
+
+#contact .contact-info-item:hover a {
+  color: #fff;
+}
+
+#contact .contact-info-item .fa {
+  font-size: 34px;
+  margin-bottom: 14px;
+}
+
+#contact .contact-info-item h4 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+#contact .contact-info-item a,
+#contact .contact-info-item span {
+  font-size: 14px;
+  word-break: break-word;
 }
 
 #contact input[type="submit"]:hover {
@@ -596,8 +645,7 @@ footer .footer-copyright p {
   transition: all ease-in-out 0.3s;
 }
 
-.tech-chip i,
-.tech-chip .tech-chip-icon {
+.tech-chip i {
   font-size: 22px;
   line-height: 1;
 }
@@ -609,8 +657,34 @@ footer .footer-copyright p {
   box-shadow: 0px 10px 18px 0px rgba(90, 91, 95, 0.25);
 }
 
-.tech-chip.fa-magic {
-  color: inherit;
+.tech-svg {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+.icon-flutter { color: #02569B; }
+.icon-dart { color: #0175C2; }
+.icon-kotlin { color: #7F52FF; }
+.icon-swift { color: #F05138; }
+.icon-android { color: #3DDC84; }
+.icon-firebase { color: #FFA000; }
+.icon-git { color: #F05032; }
+.icon-github { color: #181717; }
+.icon-githubactions { color: #2088FF; }
+.icon-figma { color: #F24E1E; }
+.icon-openai { color: #412991; }
+.icon-anthropic { color: #D97757; }
+.icon-gemini { color: #4285F4; }
+
+.tech-chip:hover .tech-svg {
+  color: #fff;
+}
+
+#service .service-thumb .tech-svg {
+  width: 72px;
+  height: 72px;
+  margin-bottom: 12px;
 }
 
 /*---------------------------------------
