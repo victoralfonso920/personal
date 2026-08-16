@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>My personal web</title>
@@ -11,7 +11,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <!-- Favicon -->
-<link rel="shortcut icon" href="#" type="image/png">
+<link rel="shortcut icon" href="./img/perfil-nuevo.jpg" type="image/jpeg">
 
 <!-- Bootstrap css -->
 <link rel="stylesheet" href="./css/bootstrap.min.css">
@@ -20,10 +20,7 @@
 <link rel="stylesheet" href="./css/animate.css">
 
 <!-- Fontawesome css -->
-<link rel="stylesheet" href="./css/font-awesome.css">
 <link rel="stylesheet" href="./css/font-awesome.min.css">
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
 <!-- magnific-popup css -->
 <link rel="stylesheet" href="./css/magnific-popup.css">
@@ -114,7 +111,7 @@
                <div class="col-md-offset-1 col-md-6 col-sm-6">
                     <!-- ABOUT IMAGE HERE -->
                     <div class="wow fadeInUp about-image animated" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp;">
-                         <img src="./img/photo.jpg" class="img-responsive" alt="">
+                         <img src="./img/perfil-nuevo.jpg" class="img-responsive" alt="Victor Hernandez, Ingeniero en Sistemas">
                          <h4><span class="font-playfair">Victor </span>Hernandez <span >Ingeniero en sistemas</span></h4>
                     </div>
                </div>
@@ -204,7 +201,7 @@
                     <!-- WORK THUMB -->
                     <div class="work-thumb">
                          <a href="./img/php.png" class="image-popup">
-                              <img src="./img/php.png" class="img-responsive" alt="Work">
+                              <img src="./img/php.png" class="img-responsive" alt="PHP">
                          </a>
                     </div>
                </div>
@@ -213,7 +210,7 @@
                     <!-- WORK THUMB -->
                     <div class="work-thumb">
                          <a href="./img/android.jpg" class="image-popup">
-                              <img src="./img/android.jpg" class="img-responsive" alt="Work">
+                              <img src="./img/android.jpg" class="img-responsive" alt="Android">
                          </a>
                     </div>
                </div>
@@ -222,7 +219,7 @@
                     <!-- WORK THUMB -->
                     <div class="work-thumb">
                          <a href="./img/realm.png" class="image-popup">
-                              <img src="./img/realm.png" class="img-responsive" alt="Work">
+                              <img src="./img/realm.png" class="img-responsive" alt="Realm">
                          </a>
                     </div>
                </div>
@@ -231,7 +228,7 @@
                     <!-- WORK THUMB -->
                     <div class="work-thumb">
                          <a href="./img/swift.jpg" class="image-popup">
-                              <img src="./img/swift.jpg" class="img-responsive" alt="Work">
+                              <img src="./img/swift.jpg" class="img-responsive" alt="Swift">
                          </a>
                     </div>
                </div>
@@ -240,7 +237,7 @@
                     <!-- WORK THUMB -->
                     <div class="work-thumb">
                          <a href="./img/Kotlin.png" class="image-popup">
-                              <img src="./img/Kotlin.png" class="img-responsive" alt="Work">
+                              <img src="./img/Kotlin.png" class="img-responsive" alt="Kotlin">
                          </a>
                     </div>
                </div>
@@ -248,16 +245,16 @@
                <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="1.2s" style="visibility: hidden; animation-delay: 1.2s; animation-name: none;">
                     <!-- WORK THUMB -->
                     <div class="work-thumb">
-                         <a href="../img/linux.png" class="image-popup">
-                              <img src="./img/linux.png" class="img-responsive" alt="Work">
+                         <a href="./img/linux.png" class="image-popup">
+                              <img src="./img/linux.png" class="img-responsive" alt="Linux">
                          </a>
                     </div>
                </div>
  <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="1.2s" style="visibility: hidden; animation-delay: 1.2s; animation-name: none;">
                     <!-- WORK THUMB -->
                     <div class="work-thumb">
-                         <a href="../img/aspnet_code.png" class="image-popup">
-                              <img src="./img/aspnet_code.png" class="img-responsive" alt="Work">
+                         <a href="./img/aspnet_code.png" class="image-popup">
+                              <img src="./img/aspnet_code.png" class="img-responsive" alt="ASP.NET">
                          </a>
                     </div>
                </div>
@@ -287,15 +284,19 @@
                <div class="col-md-offset-1 col-md-10 col-sm-12">
                      <!-- CONTACT FORM HERE -->
                     <div class="wow fadeInUp contact-form" data-wow-delay="1s" style="visibility: hidden; animation-delay: 1s; animation-name: none;">
-                        <form action="mailto:victoralfonso920@gmail.com" method="post">
+                        <form action="https://formsubmit.co/victoralfonso920@gmail.com" method="POST">
+                              <input type="hidden" name="_subject" value="Nuevo mensaje desde tu web personal">
+                              <input type="hidden" name="_next" value="https://victoralfonso920.github.io/personal/#contact">
+                              <input type="hidden" name="_captcha" value="false">
+                              <input type="text" name="_honey" style="display:none">
                               <div class="col-md-6 col-sm-6">
-                                   <input type="text" class="form-control" placeholder="Nombre" required="">
+                                   <input type="text" name="name" class="form-control" placeholder="Nombre" required="">
                               </div>
                               <div class="col-md-6 col-sm-6">
-                                   <input type="email" class="form-control" placeholder="Correo" required="">
+                                   <input type="email" name="email" class="form-control" placeholder="Correo" required="">
                               </div>
                               <div class="col-md-12 col-sm-12">
-                                   <textarea class="form-control" rows="5" placeholder="Mensaje" required=""></textarea>
+                                   <textarea name="message" class="form-control" rows="5" placeholder="Mensaje" required=""></textarea>
                               </div>
                               <div class="col-md-4 col-sm-6">
                                    <input type="submit" class="form-control" value="Enviar">
@@ -317,7 +318,7 @@
 
                <div class="col-md-23 col-sm-23">
                     <div class="wow fadeInUp footer-copyright" data-wow-delay="0.2s" style="visibility: hidden; animation-delay: 0.2s; animation-name: none;">
-                         <p class="font-playfair">© 2016 | All Rights Reserved.</p>
+                         <p class="font-playfair">© 2026 | All Rights Reserved.</p>
                     </div>
                     <!-- SOCIAL ICONS -->
                     <ul class="social-icon">
@@ -326,7 +327,7 @@
                          <li class="wow fadeInUp" data-wow-delay="0.6s" style="visibility: hidden; animation-delay: 0.6s; animation-name: none;">
                               <a href="https://github.com/victoralfonso920" class="fa fa-github"></a></li>
                          <li class="wow fadeInUp" data-wow-delay="0.8s" style="visibility: hidden; animation-delay: 0.8s; animation-name: none;">
-                              <a href="#" class="fa fa-google-plus"></a></li>
+                              <a href="mailto:victoralfonso920@gmail.com" class="fa fa-envelope"></a></li>
                     </ul>
                </div>
                
