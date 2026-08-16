@@ -29,8 +29,8 @@
 
 ------------------------------------------------------------------*/
 
-@import url('http://fonts.googleapis.com/css?family=Playfair+Display:400,700');
-@import url('http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700');
 
 body {
     background: rgb(239, 239, 239);
@@ -177,6 +177,8 @@ a:hover, a:active, a:focus {
 #service,
 #divider,
 #work,
+#projects,
+#experience,
 #contact {
   background: #ffffff;
   box-shadow:0 40px 100px rgba(0,0,0,.2);
@@ -382,9 +384,11 @@ footer {
   padding: 42px 22px;
 }
 
-#service .service-thumb .fa {
+#service .service-thumb .fa,
+#service .service-thumb [class^="devicon-"] {
   font-size: 82px;
   margin-bottom: 12px;
+  display: inline-block;
 }
 
 
@@ -549,6 +553,190 @@ footer .footer-copyright p {
   h2 {font-size: 32px;line-height: 42px;}
 
   h3 {font-size: 12px;letter-spacing: 8px;padding: 0px 10px 0px 18px;}
+
+}
+
+
+
+/*---------------------------------------
+    14 Tech grid section
+-----------------------------------------*/
+
+.tech-category {
+  margin-bottom: 48px;
+  text-align: left;
+}
+
+.tech-category h4 {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 20px;
+}
+
+.tech-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.tech-chip {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f7f7f7;
+  border-radius: 100px;
+  padding: 10px 20px 10px 14px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+
+.tech-chip i,
+.tech-chip .tech-chip-icon {
+  font-size: 22px;
+  line-height: 1;
+}
+
+.tech-chip:hover {
+  background: #000;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0px 10px 18px 0px rgba(90, 91, 95, 0.25);
+}
+
+.tech-chip.fa-magic {
+  color: inherit;
+}
+
+/*---------------------------------------
+    15 Projects section
+-----------------------------------------*/
+
+#projects .project-card {
+  background: #f7f7f7;
+  border-radius: 8px;
+  padding: 28px 24px;
+  margin-bottom: 26px;
+  height: 100%;
+  text-align: left;
+  position: relative;
+  top: 0;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+
+#projects .project-card:hover {
+  background: #000;
+  top: -5px;
+  box-shadow: 0px 16px 22px 0px rgba(90, 91, 95, 0.3);
+}
+
+#projects .project-card:hover h4,
+#projects .project-card:hover p,
+#projects .project-card:hover .project-sector {
+  color: #fff;
+}
+
+#projects .project-card h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+#projects .project-card .project-sector {
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #999;
+  margin-bottom: 12px;
+}
+
+#projects .project-card a {
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/*---------------------------------------
+    16 Experience timeline section
+-----------------------------------------*/
+
+#experience .timeline {
+  text-align: left;
+  max-width: 860px;
+  margin: 0 auto;
+  border-left: 3px solid #f0f0f0;
+  padding-left: 40px;
+}
+
+#experience .timeline-item {
+  position: relative;
+  padding-bottom: 44px;
+}
+
+#experience .timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+#experience .timeline-item:before {
+  content: "";
+  position: absolute;
+  left: -46px;
+  top: 4px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #000;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 3px #f0f0f0;
+}
+
+#experience .timeline-item .timeline-period {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #999;
+  margin-bottom: 6px;
+}
+
+#experience .timeline-item h4 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  margin-bottom: 4px;
+}
+
+#experience .timeline-item .timeline-role {
+  display: block;
+  font-size: 15px;
+  color: #4d638c;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+
+  #experience .timeline {
+    padding-left: 26px;
+  }
+
+  #experience .timeline-item:before {
+    left: -32px;
+  }
+
+  .tech-chip {
+    font-size: 13px;
+    padding: 8px 16px 8px 12px;
+  }
 
 }
 
