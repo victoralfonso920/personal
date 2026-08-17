@@ -383,12 +383,6 @@ footer {
   padding: 42px 22px;
 }
 
-#service .service-thumb .fa,
-#service .service-thumb [class^="devicon-"] {
-  font-size: 82px;
-  margin-bottom: 12px;
-  display: inline-block;
-}
 
 
 
@@ -551,6 +545,13 @@ footer .footer-copyright p {
     vertical-align: middle;
     position: relative;
     margin: 22px 14px 22px 14px;
+    display: inline-block;
+}
+
+.social-icon li a svg {
+    width: 20px;
+    height: 20px;
+    display: block;
 }
 
 .social-icon li a:hover {
@@ -676,15 +677,17 @@ footer .footer-copyright p {
 .icon-openai { color: #412991; }
 .icon-anthropic { color: #D97757; }
 .icon-gemini { color: #4285F4; }
+.icon-generic,
+.icon-rocket { color: #333; }
 
 .tech-chip:hover .tech-svg {
   color: #fff;
 }
 
 #service .service-thumb .tech-svg {
-  width: 72px;
-  height: 72px;
-  margin-bottom: 12px;
+  width: 52px;
+  height: 52px;
+  margin-bottom: 18px;
 }
 
 /*---------------------------------------
