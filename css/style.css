@@ -694,17 +694,29 @@ footer .footer-copyright p {
     15 Projects section
 -----------------------------------------*/
 
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 26px;
+  margin-top: 10px;
+}
+
 #projects .project-card {
   background: #f7f7f7;
   border-radius: 8px;
   padding: 28px 24px;
-  margin-bottom: 26px;
-  height: 100%;
   text-align: left;
   position: relative;
   top: 0;
+  display: flex;
+  flex-direction: column;
   -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
+}
+
+#projects .project-card a {
+  margin-top: auto;
+  padding-top: 12px;
 }
 
 #projects .project-card:hover {
